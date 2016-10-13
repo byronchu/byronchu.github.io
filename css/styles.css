@@ -1,0 +1,474 @@
+/*html {
+  background: url("file:///C:/Users/Byron/apps/static-sites/byronchu.com/images/Moving%20Parts.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+
+
+body {
+  background-color: darkblue;
+  background-image: url("/images/index_background.jpg");
+  background-repeat: repeat-y;
+  background-position: top left;
+
+  /*font-family: 'OpenSans', sans-serif;*/
+  font-family:'EB Garamond', serif;
+  background-size: cover;
+  font-size: 18px
+  padding: 1em;
+  color: white;
+}
+
+
+
+header {
+  background-color: #11111;
+    color: yellow;
+    /*padding-top: 25px;*/
+  text-align: center
+}
+
+/*
+ h1 {
+  background-color: #11111;
+  font-family: 'OpenSans', sans-serif;
+
+  font-size: 50px
+}*/
+
+.mainspace{
+/*  border-style: double; */
+   margin: auto;
+  text-align: center;
+
+}
+
+.mainnav {
+align-items: center;
+height: 200px
+width: auto;
+margin-left: : auto;
+margin-right: auto;
+
+}
+.mainnav ul {
+
+  text-align: center;
+  padding: 2em;
+  align-items: left;
+
+  margin: 1em;
+  list-style-type: none;
+  margin: 0 0 3px 0;
+}
+
+
+.ghost-button-rounded-corners {
+  display: inline-block;
+
+  width: 200px;
+  padding: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  text-align: center;
+  font-size: 20px;
+  outline: none;
+  text-decoration: none;
+    margin: 0 0 0.5em 0;
+}
+
+.ghost-button-rounded-corners:hover,
+.ghost-button-rounded-corners:active {
+  background-color: #fff;
+  color: #000;
+
+}
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 46px;
+    font-size: 43px;
+    margin: 0 0 23px 0;
+    }
+h2 {
+    font-family: 'Cantarell', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin: 0 0 23px 0;
+    }
+p {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0 0 23px 0;
+    }
+
+
+
+/*menu*/
+
+/* Navigation Menu - Background */
+.navigation {
+  /* critical sizing and position styles */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #111;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: white; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+
+  /* non-critical apperance styles */
+  padding: 4em;
+  background-image: linear-gradient(135deg, rgb(254,255,255) 0%,rgb(221,241,249) 35%,rgb(160,216,239) 100%);
+  background-size: 200%;
+}
+.
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  /* critical positioning styles */
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+  background-size: contain;
+}
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+/* Additional non-critical styles */
+
+h1, h2, h3, p {
+  max-width: 600px;
+  margin: 0 auto 1em;
+}
+
+code {
+	padding: 2px;
+	background: #ddd;
+}
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: 'Fjalla One', sans-serif; }
+
+
+/*about page*/
+.about {
+  color: black;
+  width: 500px;
+  background-color: lightgrey;
+  opacity:0.9;
+  padding:1em;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+.aboutimage{
+
+  /*padding:80px*/
+  border:80px;
+  width: 170px;
+  height:170px;
+  /*border:150px;*/
+  border-radius: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1.0;
+
+}
+
+.index {
+  height = 100vp
+}
+
+
+/*contact page*/
+
+body.contact {
+  background-color: lightgrey;
+  background-image: url("/images/photo-lamp-background.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  /*font-family: 'OpenSans', sans-serif;*/
+  font-family:'EB Garamond', serif;
+  background-size: cover;
+  font-size: 18px
+  padding: 1em;
+  color: white;
+}
+body.experiencepage {
+  background-color: darkgrey;
+  background-image: url("/images/exp-background.jpg");
+  background-repeat: repeat-y;
+  background-position: bottom right;
+
+  /*font-family: 'OpenSans', sans-serif;*/
+  font-family:'EB Garamond', serif;
+  background-size: cover;
+  font-size: 18px
+  padding: 1em;
+  color: white;
+}
+
+body.aboutpage {
+  background-color: darkgrey;
+  background-image: url("/images/about_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /*font-family: 'OpenSans', sans-serif;*/
+  font-family:'EB Garamond', serif;
+  background-size: cover;
+
+  font-size: 18px
+  padding: 1em;
+  color: white;
+}
+
+.form{
+
+  position: relative;;
+  text-align: center;
+  padding: 30px;
+  background-color: #160816;
+  opacity: 0.9;
+  width: 450px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.telephone{
+  height: 30px;
+  padding:;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 10px;
+  /*background-color: orange;*/
+}
+
+.form_name{
+  height: 30px;
+  padding:;
+  margin-left: auto;
+  margin-right:auto;
+  /*background-color: lightgreen;*/
+}
+.message{
+  height: 150px;
+  padding-bottom: 10px;
+
+
+}
+.email{
+ padding-bottom:20px;
+
+}
+.submit_button{
+  height: 20px;
+}
+
+.form-control{
+  font-size:14px;
+}
+
+
+
+@media  screen and (max-width: 500px) {
+
+    body {
+        background-color: #ffff;
+    }
+
+    .ghost-button-rounded-corners {
+      display: inline-block;
+      width: 320px;
+      padding: 20px;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 0px;
+      text-align: center;
+      font-size: 30px;
+      outline: none;
+      text-decoration: none;
+        margin: 0 0 0.5em 0;
+    }
+
+    .telephone{
+      height: 30px;
+      padding:;
+      margin-left: auto;
+      margin-right:auto;
+      margin-top: 40px;
+
+    }
+
+    .form_name{
+      height: 30px;
+      margin-left: auto;
+      margin-right:auto;
+
+    }
+    .message{
+      height: 150px;
+      padding-bottom: 20px;
+
+
+    }
+    .email{
+     padding-bottom:20px;
+
+    }
+
+    .form-control{
+      font-size:18px;
+    }
+
+    .submit_button{
+      padding-top:40px;
+      height: 40px;
+    }
+
+}
+
+.experience{
+ text-align: left;
+ color:black;
+ clear: right;
+ background-color: white;
+ opacity: 0.95;
+}
+
+.experiencebox {
+  text-align: left;
+  color: black;
+  position: relative;
+  padding: 20px;
+  margin:5px;
+  min-height: 300px;
+  width: 250px;
+  float:left;
+  background-color: white;
+  opacity: 0.95;
+}
+
+
+.experiencebox ul{
+  font-family: 'Cantarell', sans-serif;
+  list-style-type: circle;
+  padding-left: 10px;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+
+.experience_wrapper {
+  height: auto;
+  text-align: left;
+  padding: 10px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+
+.social-button a {
+  color:white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+header a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.coding ul{
+  font-family: 'Cantarell', sans-serif;
+  font-size: 17px;
+  line-height: 23px;
+}
