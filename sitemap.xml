@@ -8,15 +8,12 @@ http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <loc>https://byronchu.github.io/</loc>
   </url>
   <url>
-    <loc>https://byronchu.github.io/contact/</loc>
+    <loc>https://byronchu.github.io/contact.html/</loc>
   </url>
   <url>
-    <loc>https://byronchu.github.io/experience/</loc>
+    <loc>https://byronchu.github.io/scroll_experience.html/</loc>
   </url>
   <url>
-    <loc>https://byronchu.github.io/interests/</loc>
-  </url>
-  <url>
-    <loc>https://byronchu.github.io/about/</loc>
+    <loc>https://byronchu.github.io/about.html/</loc>
   </url>
 </urlset>
