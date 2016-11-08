@@ -89,7 +89,8 @@ p {
 /*about page*/
 .about {
   color: black;
-  width: 500px;
+  max-width: 500px;
+  min-width: 300px;
   background-color: lightgrey;
   opacity:0.9;
   padding:1em;
