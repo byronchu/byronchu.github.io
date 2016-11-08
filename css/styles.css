@@ -152,7 +152,8 @@ body.aboutpage {
   padding: 30px;
   background-color: #160816;
   opacity: 0.9;
-  width: 450px;
+  max-width: 450px;
+  min-width: 250px;
   margin-right: auto;
   margin-left: auto;
   margin-top: auto;
